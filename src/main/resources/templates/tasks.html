@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <h1>Lista de Tarefas</h1>
+    <ul>
+        <li th:each="task : ${tasks}">
+            <!-- Exibe o ID e a descrição de cada tarefa -->
+            <span th:text="${task.id}"></span> - <span th:text="${task.description}"></span>
+        </li>
+    </ul>
+</body>
+</html>
